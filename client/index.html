@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SyncText</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            #messages {
+                border: 1px solid #ccc;
+                height: 200px;
+                overflow-y: scroll;
+                margin-bottom: 10px;
+            }
+            #input {
+                width: calc(100% - 22px);
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sync Web App</h1>
+        <div id="messages"></div>
+        <input type="text" id="input" placeholder="Type a message..." />
+        <!-- 引入外部 JavaScript 文件 -->
+        <script src="./js/clientsend.js"></script>
+    </body>
+</html>
